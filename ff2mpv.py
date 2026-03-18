@@ -11,7 +11,8 @@ def main():
     url = message.get("url")
     args = [
         "systemd-run",
-        "--user", "--scope",
+        "--user",
+        "--scope",
         "--slice=app-graphical.slice",
         "--collect",
         "--no-block",
